@@ -1,0 +1,219 @@
+/* *************  Section 1  ************* */
+.postImg{
+    height: 31.25vw;
+}
+.postImg img{
+    width: 100%;
+}
+.sec1{
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.sec1{
+    max-width: 920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sec1 .navigation ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sec1 .navigation ul li,
+.sec1 .navigation ul li a{
+    font-family: 'Montserrat-Bold';
+    color: #4556CF;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.sec1 .navigation ul li:not(:last-child):after{
+    content: '›';
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-size: 28px;
+    margin: 0 8px;
+    color: #202226;
+    opacity: 0.4;
+    transform: translate(0px, -2px);
+}
+.sec1 .content{
+    color: #202226;
+}
+.sec1 .content .title{
+    font-size: 3.54vw;
+    font-family: 'Montserrat-Bold';
+    margin-top: 35px;
+    margin-bottom: 13px;
+}
+.sec1 .content .types{
+    display: flex;
+    justify-content: space-between;
+}
+.sec1 .content .types ul{
+    list-style: none;
+    display: flex;
+}
+.sec1 .content .types ul li{
+    color: white;
+    background: #4556CF;
+    border-radius: 13px;
+    font-weight: 900;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+.sec1 .content .types .otherTypes li{
+    background: #F5F7FE;
+    border: 1px solid rgba(69, 86, 207, 0.5);
+    color: #4556CF;
+}
+.sec1 .content .types .otherTypes li:not(:last-child){
+    margin-right: 8px;
+}
+.sec1 .content .info{
+    margin-top: 16px;
+}
+.sec1 .content p{
+    opacity: 0.5;
+    font-weight: 900;
+}
+.sec1 .content p:not(:last-child){
+    margin-bottom: 8px;
+}
+/* *************  Section 2  ************* */
+.sec2{
+    padding-bottom: 150px;
+}
+.sec2 .latestTitle{
+    font-size: 48px;
+    color: #4556CF;
+    font-family: 'Montserrat-Bold';
+    margin-bottom: 67px;
+}
+.sec2 .post .content .type{
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    background: #4556CF;
+    border-radius: 13px;
+    width: fit-content;
+    font-weight: 900;
+    padding: 8px 15.5px;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+.sec2 .post .content .info{
+    color: #8F9093;
+    display: block;
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+.sec2 .post .postImage{
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sec2 .post .content{
+    position: relative;
+    color: #202226;
+    font-weight: 900;
+}
+.sec2 .post a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    font-family: 'Montserrat-Bold';
+    transition: all 0.3s ease;
+}
+.sec2 .post a:hover{
+    color: #4556CF;
+}
+.sec2 .post p{
+    margin-top: 19px;
+    line-height: 170%;
+    letter-spacing: 0.3px;
+}
+.sec2 .latest{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+}
+.sec2 .latest .post .content{
+    height: 376px;
+    margin-top: 20px;
+}
+.sec2 .latest h1{
+    font-size: 32px;
+    letter-spacing: -0.03em;
+    font-family: 'Montserrat-Bold';
+}
+.sec2 .latest .post .postImage{
+    max-width: 410px;
+    width: 100%;
+}
+.sec2 .latest .post .postImage img{
+    width: 100%;
+}
+/* *************  Section 3  ************* */
+.sec3{
+    background: #F5F7FE;
+    padding: 7.44vw 0 7.81vw;
+}
+.sec3 .subscribe{
+    color: #202226;  
+    max-width: 607px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.sec3 .subscribe h1{
+    font-family: 'Montserrat-Bold';
+    font-size: 4.16vw;
+    letter-spacing: -0.03em;
+    margin-bottom: 3.28vw;
+}
+.sec3 .subscribe p{
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 4.68vw;
+}
+.sec3 .subscribe input{
+    max-width: 29.94vw;
+    width: 100%;
+    margin-bottom: 4.68vw;
+    outline: none;
+    background: transparent;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #8B8C92;
+    font-weight: 900;
+}
+.sec3 .subscribe input::placeholder{
+    color: #202226;
+}
+.sec3 .subscribe button{
+    display: block;
+    margin: 0 auto;
+    background: #202226;
+    border-radius: 100px;
+    max-width: 388px;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 8px 34px rgba(69, 86, 207, 0.64);
+    transition: all 0.3s ease;
+    padding: 30.5px 0;
+}
+.sec3 .subscribe button:hover{
+    box-shadow: none;
+}
+/* *************  ---  ************* */

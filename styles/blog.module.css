@@ -1,0 +1,270 @@
+/* *************  Section 1  ************* */
+.sec1{
+    padding: 10.78vw 0 7.81vw;
+    position: relative;
+}
+.sec1 h1{
+    color: #4556CF;
+    font-size: 50px;
+    font-family: 'Montserrat-Bold';
+}
+.sec1 p{
+    margin-top: 30px;
+    color: #202226;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 42px;
+}
+.sec1 .inputWrap{
+    max-width: 600px;
+    width: 100%;
+    background: #F5F7FE;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.sec1 .inputWrap input{
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 30.5px 70px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #202226;
+}
+.sec1 .inputWrap input::placeholder{
+    color: #8B8C92;
+}
+.sec1 .inputWrap::before{
+    content: '';
+    background: url(../src/images/icons/search.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 35px;
+}
+.sec1 .inputWrap .clear{
+    color: #8B8C92;
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+.sec1 .inputWrap .clear.active{
+    transform: scale(1);
+}
+.sec1 img{
+    border-radius: 0;
+}
+/* *************  Section 2  ************* */
+.sec2 .top{
+    margin-bottom: 84px;
+}
+.sec2 .middle{
+    margin-bottom: 65px;
+}
+.sec2 .bottom{
+    margin-bottom: 160px;
+}
+.sec2 .post .content .type{
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    background: #4556CF;
+    border-radius: 13px;
+    width: fit-content;
+    font-weight: 900;
+    padding: 8px 15.5px;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+.sec2 .post .content .info{
+    color: #8F9093;
+    display: block;
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+.sec2 .post .postImage{
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sec2 .post .content{
+    position: relative;
+    color: #202226;
+    font-weight: 900;
+}
+.sec2 .post a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 16px;
+    font-family: 'Montserrat-Bold';
+    transition: all 0.3s ease;
+}
+.sec2 .post a:hover{
+    color: #4556CF;
+}
+.sec2 .post p{
+    margin-top: 19px;
+    line-height: 170%;
+    letter-spacing: 0.3px;
+}
+/* top */
+.sec2 .top .post{
+    display: flex;
+    justify-content: space-between;
+}
+.sec2 .top .post .postImage{
+    max-width: 750px;
+    width: 100%;
+    margin-right: 4.37vw;
+}
+.sec2 .top .post .postImage img{
+    width: 100%;
+}
+.sec2 .top .post .content{
+    max-width: 530px;
+    width: 100%;
+}
+.sec2 .top h1{
+    font-size: 48px; /* 2.5vw */
+    font-family: 'Montserrat-Bold';
+}
+/* middle */
+.sec2 .middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+}
+.sec2 .middle .post .content{
+    height: 376px;
+    margin-top: 20px;
+}
+.sec2 .middle h1{
+    font-size: 32px;
+    letter-spacing: -0.03em;
+    font-family: 'Montserrat-Bold';
+}
+.sec2 .middle .post .postImage{
+    max-width: 410px;
+    width: 100%;
+}
+.sec2 .middle .post .postImage img{
+    width: 100%;
+}
+/* bottom */
+.sec2 .bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 64px;
+}
+.sec2 .bottom .post .content{
+    height: 352px;
+    margin-top: 20px;
+}
+.sec2 .bottom h1{
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: -0.03em;
+    font-family: 'Montserrat-Bold';
+}
+.sec2 .bottom .post .postImage{
+    max-width: 648px;
+    width: 100%;
+}
+.sec2 .bottom .post .postImage img{
+    width: 100%;
+}
+/* *************  Section 3  ************* */
+.sec3{
+    background: #F5F7FE;
+    padding: 7.44vw 0 7.81vw;
+}
+.sec3 .subscribe{
+    color: #202226;  
+    max-width: 607px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.sec3 .subscribe h1{
+    font-family: 'Montserrat-Bold';
+    font-size: 4.16vw;
+    letter-spacing: -0.03em;
+    margin-bottom: 3.28vw;
+}
+.sec3 .subscribe p{
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 4.68vw;
+}
+.sec3 .subscribe input{
+    max-width: 29.94vw;
+    width: 100%;
+    margin-bottom: 4.68vw;
+    outline: none;
+    background: transparent;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #8B8C92;
+    font-weight: 900;
+}
+.sec3 .subscribe input::placeholder{
+    color: #202226;
+}
+.sec3 .subscribe button{
+    display: block;
+    margin: 0 auto;
+    background: #202226;
+    border-radius: 100px;
+    max-width: 388px;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 8px 34px rgba(69, 86, 207, 0.64);
+    transition: all 0.3s ease;
+    padding: 30.5px 0;
+}
+.sec3 .subscribe button:hover{
+    box-shadow: none;
+}
+/* *************  Animations  ************* */
+.sec1 .egg{
+    width: 4.06vw;
+    top: 12.34vw;
+    left: 59.94vw;
+}
+.sec1 .cube{
+    width: 3.9vw;
+    top: 17.08vw;
+    right: 7.18vw;
+}
+.sec1 .blueCircle{
+    width: 1vw;
+    top: 21vw;
+    left: 9vw;
+}
+.sec1 .confetti{
+    width: 3.38vw;
+    top: 18vw;
+    left: 43.71vw;
+}
+.sec1 .threeCircles{
+    width: 2.5vw;
+    bottom: 2vw;
+    left: 3vw;
+}
+/* *************  ---  ************* */

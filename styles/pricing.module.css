@@ -1,0 +1,385 @@
+/* *************  Section 1  ************* */
+.sec1{
+    padding: 10.78vw 14.47vw 0;
+    background: url(../src/images/pricing/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #202226;
+}
+.sec1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F5F7FE;
+    opacity: 0.93;
+    z-index: 1;
+}
+.sec1 .content{
+    position: relative;
+    z-index: 2;
+}
+.sec1 .content h1{
+    color: #4556CF;
+    font-size: 50px;
+    font-family: 'Montserrat-Bold';
+    margin-bottom: 30px;
+}
+.sec1 .content p{
+    font-weight: 900;
+    max-width: 505px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 150%;
+}
+.sec1 .content .btnsWrapper{
+    margin-top: 3.64vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    transform: translate(0px, 30px);
+}
+.sec1 .content .btnsWrapper button{
+    font-size: 1.77vw;
+    background: white;
+    padding: 3.48vw 0;
+    font-weight: 900;
+    color: #202226;
+    box-shadow: 0px 8px 34px rgba(69, 86, 207, 0.08);
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.sec1 .content .btnsWrapper button.annually{
+    position: relative;
+}
+.sec1 .content .btnsWrapper button.annually::after{
+    content: 'save 8%';
+    position: absolute;
+    color: #202226;
+    font-size: 18px;
+    opacity: 0.5;
+    bottom: 2vw;
+    right: 44%;
+    transition: all 0.3s ease;
+}
+.sec1 .content .btnsWrapper button.active{
+    background: #4556CF;
+    color: white;
+}
+.sec1 .content .btnsWrapper button.active::after{
+    color: white;
+    opacity: 0.5;
+}
+/* *************  Section 2  ************* */
+.sec2{
+    padding: 233px 0 150px;
+}
+.sec2 .offersWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.sec2 .offer{
+    padding: 40px 22px 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 78px rgba(0, 163, 123, 0.12);
+    border-radius: 13px;
+}
+.sec2 .offer h3{
+    font-size: 18px;
+    font-family: 'Montserrat-Bold';
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.sec2 .offer .price{
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #202226;
+}
+.sec2 .offer .price h2{
+    font-size: 48px;
+    font-family: 'Montserrat-Bold';
+}
+.sec2 .offer .price span{
+    margin-right: 10px;
+    font-style: 18px;
+    font-family: 'Montserrat-Bold';
+}
+.sec2 .offer .price p{
+    align-self: self-end;
+    margin-left: 10px;
+    transform: translate(0, -10px);
+    font-weight: 900;
+}
+.sec2 .offer hr{
+    background: #202226;
+    opacity: 0.1;
+    margin-bottom: 30px;
+}
+.sec2 .offer ul{
+    list-style: none;
+    margin-left: 75px;
+}
+.sec2 .offer ul li{
+    font-weight: 900;
+    font-style: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.sec2 .offer ul li:not(:last-child){
+    margin-bottom: 16px;
+}
+.sec2 .offer ul li::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    left: -36px;
+    background: #202226;
+}
+.sec2 .offer button{
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px 0;
+    border-radius: 100px;
+    background: white;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    font-family: 'Montserrat-Bold';
+    transition: all 0.3s ease;
+}
+.sec2 .offer:nth-child(1){
+    box-shadow: 0px 10px 78px rgba(0, 163, 123, 0.12);
+}
+.sec2 .offer:nth-child(1) h3,
+.sec2 .offer:nth-child(1) .price h2{
+    color: #00A37B;
+}
+.sec2 .offer:nth-child(1) ul li::before{
+    background: #00A37B;
+}
+.sec2 .offer:nth-child(1) button{
+    color: #00A37B;
+    border: 2px solid #00A37B;
+}
+.sec2 .offer:nth-child(1) button:hover{
+    color: white;
+    background: #00A37B;
+}
+.sec2 .offer.popular{
+    position: relative;
+    border-radius: 0px 0px 13px 13px;
+    box-shadow: 0px 10px 78px rgba(69, 86, 207, 0.12);
+}
+.sec2 .offer.popular::before{
+    content: 'most popular';
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -38px;
+    left: 0;
+    font-size: 14px;
+    color: white;
+    font-weight: 900;
+    background: #4556CF;
+    border-radius: 13px 13px 0px 0px;
+    box-shadow: 0px 10px 78px rgba(69, 86, 207, 0.12);
+    padding: 10px 0;
+}
+.sec2 .offer.popular h3,
+.sec2 .offer.popular .price h2{
+    color: #4556CF;
+}
+.sec2 .offer.popular ul li::before{
+    background: #4556CF;
+}
+.sec2 .offer.popular button{
+    color: white;
+    background: #4556CF;
+    border: 2px solid #4556CF;
+}
+.sec2 .offer.popular button:hover{
+    background: #3848B7;
+    border: 2px solid #3848B7;
+}
+.sec2 .offer:nth-child(3){
+    box-shadow: 0px 10px 78px rgba(255, 136, 109, 0.12);
+}
+.sec2 .offer:nth-child(3) h3,
+.sec2 .offer:nth-child(3) .price h2{
+    color: #FF886D;
+}
+.sec2 .offer:nth-child(3) ul li::before{
+    background: #FF886D;
+}
+.sec2 .offer:nth-child(3) button{
+    color: #FF886D;
+    border: 2px solid #FF886D;
+}
+.sec2 .offer:nth-child(3) button:hover{
+    color: white;
+    background: #FF886D;
+}
+.sec2 .offer:nth-child(4){
+    box-shadow: 0px 10px 78px rgba(0, 163, 123, 0.12);
+}
+.sec2 .offer:nth-child(4) h3,
+.sec2 .offer:nth-child(4) .price h2{
+    color: #00CFEE;
+}
+.sec2 .offer:nth-child(4) ul li::before{
+    background: #00CFEE;
+}
+.sec2 .offer:nth-child(4) button{
+    color: #00CFEE;
+    border: 2px solid #00CFEE;
+}
+.sec2 .offer:nth-child(4) button:hover{
+    color: white;
+    background: #00CFEE;
+}
+/* *************  Section 3  ************* */
+.sec3{
+    padding-bottom: 200px;
+}
+.sec3 h1{
+    color: #4556CF;
+    font-size: 48px;
+    font-family: 'Montserrat-Bold';
+    margin-bottom: 85px;
+}
+.sec3 .table{
+    font-weight: 900;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.sec3 .table p.bg{
+    background: #F5F7FE;
+}
+.sec3 .table p{
+    font-size: 16px;
+    padding: 7px 18px;
+}
+.sec3 .table .info .block{
+    margin-top: 35px;
+}
+.sec3 .table .info h4{
+    margin-bottom: 3px;
+    font-family: 'Montserrat-Bold';
+    font-style: 16px;
+}
+.sec3 .table .info{
+    max-width: 250px;
+    width: 100%;
+}
+.sec3 .table .block{
+    margin-top: 57px;
+}
+.sec3 .table .content{
+    margin-top: 22px;
+}
+.sec3 .table .content p{
+    text-align: center;
+}
+.sec3 .table .have{
+    width: 19px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    border-radius: 100px;
+    margin: 0 auto;
+    background: #4556CF;
+    color: white;
+}
+.sec3 .names{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 27px;
+}
+.sec3 .names h3.empty{
+    height: 0;
+}
+.sec3 .names h3{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+}
+.sec3 .companiesWrapper{
+    margin-top: 100px;
+    text-align: center;
+}
+.sec3 .companiesWrapper p{
+    color: #202226;
+    font-size: 22px;
+    font-weight: 900;
+    opacity: 0.6;
+    margin-bottom: 60px;
+}
+.sec3 .companiesWrapper .companies img{
+    opacity: 0.5;
+}
+.sec3 .companiesWrapper .companies img:not(:last-child){
+    margin-right: 4.16vw;
+}
+/* *************  Section 4  ************* */
+.sec4{
+    background: #F5F7FE;
+    padding: 9.89vw 0 7.81vw;
+}
+.sec4 .contentWrapper h1{
+    font-family: 'Montserrat-Bold';
+    font-size: 4.16vw;
+    letter-spacing: -0.03em;
+    color: #202226;
+    text-align: center;
+}
+.sec4 .contentWrapper h6{
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    color: #202226;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.sec4 .contentWrapper button{
+    display: block;
+    margin: 0 auto;
+    background: #202226;
+    border-radius: 100px;
+    max-width: 388px;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 8px 34px rgb(69 86 207 / 64%);
+    transition: all 0.3s ease;
+    padding: 30.5px 0;
+}
+.sec4 .contentWrapper button:hover{
+    box-shadow: unset;
+}
+.sec4 .contentWrapper p{
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 14px;
+    color: #202226;
+}
+/* ****************  ---  **************** */

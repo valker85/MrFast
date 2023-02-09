@@ -1,0 +1,119 @@
+.header{
+    width: 100%;
+    background: transparent;
+    padding: 24px 7.29vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1000;
+}
+.header.fixed{
+    transition: all 0.3s ease;
+    position: fixed;
+    background: #4556CF;
+    animation-name: headerFixed;
+    animation-duration: 0.8s;
+    z-index: 100;
+}
+@keyframes headerFixed {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+.header.fixed a{
+    color: white;
+}
+.header.fixed .list ul li a{
+    color: #202226;
+}
+.left{
+    width: 123px;
+    display: flex;
+    align-items: center;
+}
+.left img{
+    width: 100%;
+}
+.pages{
+    margin-right: 7.40vw;
+}
+.pagesUl{
+    display: flex;
+    list-style: none;
+}
+.li{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.li:not(:last-child){
+    margin-right: 4.17vw;
+}
+.a{
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.a span{
+    margin-left: 12px;
+    font-size: 18px;
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+.li:hover .a > span{
+    transform: rotate(269deg);
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.login a:first-child{
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.right a{
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+.signUp{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background: #202226;
+    padding: 12px 32px;
+    border-radius: 50px;
+}
+.list{
+    position: absolute;
+    top: 1.93vw;
+    left: -20px;
+    border-radius: 13px;
+    overflow: hidden;
+    width: 150px;
+    max-height: 0;
+    transition: all 0.3s ease;
+    z-index: 90;
+}
+.list ul li{
+    padding: 16px 20px;
+    background: white;
+}
+.list ul li a{
+    color: #202226;
+    text-decoration: none;
+    font-size: 14px;
+}
+.list ul li:nth-of-type(2n+1){
+    background: #F5F7FE;
+}
+.li:hover > .list{
+    max-height: 300px;
+}

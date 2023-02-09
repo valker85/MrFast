@@ -1,0 +1,157 @@
+/* ********* Section 1 ********* */
+.sec1{
+    padding: 206px 0 180px;
+    font-weight: 900;
+    color: #202226;
+}
+.miniNav{
+    margin-bottom: 35px;
+}
+.miniNav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.miniNav ul li{
+    margin-right: 15px;
+    font-family: 'Montserrat-Bold';
+    color: #4556CF;
+}
+.miniNav ul a{
+    margin-right: 8px;
+    position: relative;
+}
+.miniNav ul a::after{
+    content: '›';
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    font-size: 24px;
+    opacity: 0.4;
+    display: inline-block;
+}
+.generalTitle{
+    font-size: 50px;
+    color: #4556CF;
+    font-family: 'Montserrat-Bold';
+    margin-bottom: 150px;
+}
+.latestUpdates{
+    margin-bottom: 40px;
+}
+.latestUpdates h6{
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'Montserrat-Bold';
+}
+.latestUpdates p{
+    line-height: 170%;
+    font-size: 16px;
+}
+.latestUpdates p:not(:last-child){
+    margin-bottom: 30px;
+}
+.content .title{
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 130%;
+    color: #4556CF;
+    font-family: 'Montserrat-Bold';
+    letter-spacing: -0.03em;
+}
+.content .subTitle{
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 130%;
+    color: #4556CF;
+    font-family: 'Montserrat-Bold';
+}
+.content .text{
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 170%;
+}
+.content .points{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.content .points li{
+    font-size: 16px;
+    line-height: 170%;
+}
+.content .points li b{
+    font-family: 'Montserrat-Bold';
+}
+.content .points li a{
+    color: #4556CF;
+}
+.content .points li a:hover{
+    text-decoration: underline;
+}
+.content .miniTitle{
+    margin-bottom: 30px;
+    color: #4556CF;
+    font-family: 'Montserrat-Bold';
+    letter-spacing: -0.03em;
+    font-size: 26px;
+}
+/* ********* Section 2 ********* */
+.sec2{
+    background: #F5F7FE;
+    padding: 7.44vw 0 7.81vw;
+}
+.sec2 .subscribe{
+    color: #202226;  
+    max-width: 607px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.sec2 h1{
+    font-family: 'Montserrat-Bold';
+    font-size: 4.16vw;
+    letter-spacing: -0.03em;
+    margin-bottom: 3.28vw;
+    text-align: center;
+}
+.sec2 .subscribe p.info{
+    font-weight: 900;
+    font-size: 16px;
+    margin-bottom: 4.68vw;
+}
+.sec2 .subscribe input{
+    max-width: 29.94vw;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    background: transparent;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #8B8C92;
+    font-weight: 900;
+}
+.sec2 .subscribe input::placeholder{
+    color: #202226;
+}
+.sec2 .subscribe button{
+    display: block;
+    margin: 0 auto;
+    background: #202226;
+    border-radius: 100px;
+    max-width: 388px;
+    width: 100%;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0px 8px 34px rgba(69, 86, 207, 0.64);
+    transition: all 0.3s ease;
+    padding: 30.5px 0;
+    margin-top: 4.3vw;
+}
+.sec2 .subscribe button:hover{
+    box-shadow: none;
+}
+/* ********* ******* ********* */

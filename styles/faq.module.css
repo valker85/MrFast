@@ -1,0 +1,157 @@
+/* *************  Section 1  ************* */
+.sec1{
+    padding: 14.16vw;
+    background: url(../src//images/faq/bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.sec1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #F5F7FE;
+    opacity: 0.93;
+    z-index: 1;
+}
+.sec1 h1{
+    color: #4556CF;
+    font-size: 2.6vw;
+    position: relative;
+    z-index: 2;
+    font-family: 'Montserrat-Bold';
+}
+.sec1 img{
+    z-index: 2;
+    border-radius: 0;
+}
+/* *************  Section 2  ************* */
+.sec2{
+    padding: 100px 0 11.56vw;
+}
+.sec2 ul{
+    list-style: none;
+}
+.sec2 ul li{
+    margin-bottom: 40px;
+    position: relative;
+    margin-left: 36px;
+}
+.sec2 ul li h4{
+    color: #202226;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+}
+.sec2 ul h4.plus::before{
+    content: '+';
+    position: absolute;
+    left: -36px;
+    top: -5px;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'Inter';
+}
+.sec2 ul h4.minus::before{
+    content: '-';
+    position: absolute;
+    left: -36px;
+    top: -5px;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'Inter';
+}
+.sec2 ul li p{
+    font-weight: 900;
+    font-size: 16px;
+    color: #202226;
+    max-width: 925px;
+    width: 100%;
+    max-height: 200px;
+    transition: all 0.3s ease;
+    line-height: 170%;
+    height: 0px;
+    overflow: hidden;
+    transform: translate(-75px, -10px) scale(0.8);
+}
+.sec2 ul h4.minus ~ p{
+    margin-top: 20px;
+    height: fit-content;
+    transform: translate(0px, 0) scale(1);
+}
+.sec2 .more{
+    margin-top: 109px;
+    color: #202226;
+}
+.sec2 .more h2{
+    font-size: 36px;
+    font-weight: 900;
+    font-family: 'Montserrat-Bold';
+}
+.sec2 .more p{
+    font-weight: 900;
+    font-size: 15px;
+    margin-top: 16px;
+}
+.sec2 .more .help{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+    max-width: 1220px;
+    width: 100%;
+    margin-top: 60px;
+}
+.sec2 .more .help .offer{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 78px rgba(69, 86, 207, 0.12);
+    border-radius: 13px;
+    padding: 30px 48px;
+    height: 211px;
+    position: relative;
+}
+.sec2 .more .help .offer h3{
+    font-size: 24px;
+    font-family: 'Montserrat-Bold';
+}
+.sec2 .more .help .offer p{
+    font-size: 16px;
+    line-height: 170%;
+}
+.sec2 .more .help .offer a{
+    position: absolute;
+    bottom: 30px;
+    color: #4556CF;
+    font-size: 14px;
+    font-family: 'Montserrat-Bold';
+}
+/* *************  Animations  ************* */
+.sec1 .egg{
+    width: 4.06vw;
+    top: 12.34vw;
+    left: 59.94vw;
+}
+.sec1 .cube{
+    width: 3.9vw;
+    top: 17.08vw;
+    right: 7.18vw;
+}
+.sec1 .blueCircle{
+    width: 1vw;
+    top: 21vw;
+    left: 9vw;
+}
+.sec1 .confetti{
+    width: 3.38vw;
+    top: 22vw;
+    left: 46.71vw;
+}
+.sec1 .threeCircles{
+    width: 2.5vw;
+    bottom: 2vw;
+    left: 3vw;
+}
+/* *************  ---  ************* */

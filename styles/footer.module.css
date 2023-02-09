@@ -1,0 +1,51 @@
+.footerWrapper{
+    padding: 5.20vw 7.13vw 4.16vw;
+    background: #4556CF;
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.left p{
+    margin: 40px 0 24px;
+    font-weight: 900;
+    font-size: 14px;
+}
+.left ul{
+    list-style: none;
+    display: flex;
+}
+.left ul li:not(:last-child){
+    margin-right: 16px;
+}
+.center{
+    display: flex;
+}
+.center ul:not(:last-child){
+    margin-right: 6.92vw;
+}
+.center ul{
+    list-style: none;
+    font-weight: 900;
+    font-size: 14px;
+}
+.center ul li:not(:last-child){
+    margin-bottom: 24px;
+}
+.right .pic{
+    margin-top: 45px;
+}
+.right .planet{
+    margin-bottom: 45px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    font-weight: 900;
+    font-size: 14px;
+}
+.bottom a{
+    color: #FEB142;
+}

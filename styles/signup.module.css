@@ -1,0 +1,265 @@
+/* *********************** */
+.section{
+    padding: 11.19vw 14.32vw 10.41vw;
+    position: relative;
+}
+.section img.bg{
+    position: absolute;
+    right: 2vw;
+    bottom: 0;
+    z-index: 1;
+    width: 34.63vw;
+}
+.section h1{
+    color: #4556CF;
+    font-size: 2.6vw;
+    font-family: 'Montserrat-Bold';
+    margin-bottom: 2.08vw;
+}
+.section .inputsWrapper{
+    display: flex;
+    max-width: 1220px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+.section .inputs{
+    display: flex;
+    align-items: center;
+    max-width: 805px;
+    background: #F5F7FE;
+    width: 100%;
+}
+.section .inputs input{
+    background: #F5F7FE;
+    padding: 33px 29px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    color: #202226;
+    width: 50%;
+    position: relative;
+}
+.section .inputs input::placeholder{
+    color: #202226;
+}
+.section .line{
+    width: 2px;
+    height: 33px;
+    background: #4556CF;
+}
+.section .inputsWrapper button{
+    background: #202226;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-weight: 900;
+    padding: 0 7.71vw;
+    font-size: 18px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-left: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 34px rgba(69, 86, 207, 0.64);
+}
+.section .inputsWrapper button:hover{
+    box-shadow: none;
+}
+.section .agree{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    position: relative;
+}
+.section .agreeBox{
+    border: 1px solid #202226;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section .agreeBox.submit::after{
+    content: '✓';
+    color: #202226;
+    font-size: 12px;
+}
+.section .agree p{
+    font-size: 14px;
+    color: #202226;
+    font-weight: 900;
+}
+.section .social{
+    margin-top: 65px;
+}
+.section .social h4{
+    font-family: 'Montserrat-Bold';
+    font-size: 18px;
+    color: #4556CF;
+    margin-bottom: 39px;
+}
+.section .social .socialWrapper{
+    display: flex;
+}
+.section .social .facebookBtn,
+.section .social .googleBtn{
+    width: 4.32vw; /*83px*/
+    height: 4.32vw; /*83px*/
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0px 8px 34px rgba(59, 89, 152, 0.25);
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.section .social .facebookBtn::after{
+    content: '';
+    position: absolute;
+    background: url(../src/images/signup/fb.svg);
+    width: 14px;
+    height: 30px;
+}
+.section .social .googleBtn::after{
+    content: '';
+    position: absolute;
+    background: url(../src/images/signup/google.svg);
+    width: 30.37px;
+    height: 30.37px;
+}
+.section .social .socialWrapper .fb{
+    margin-right: 50px;
+}
+.section .social .facebookBtn:hover,
+.section .social .googleBtn:hover{
+    box-shadow: none;
+}
+/* /////////// Screen 2 /////////// */
+.sectionTwo .inputsWrapper{
+    margin-bottom: 40px;
+}
+
+.sectionTwo .selectWrapper{
+    position: relative;
+    width: 50%;
+    height: 84px;
+    color: #202226;
+    z-index: 30;
+}
+.sectionTwo .select{
+    background: transparent;
+    padding: 33px 29px;
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.sectionTwo .select .arrow{
+    transition: all 0.4s ease;
+    transform: rotate(90deg);
+    font-size: 26px;
+}
+.sectionTwo .select .arrow.active{
+    transform: rotate(270deg);
+}
+.sectionTwo .jobTitles{
+    width: 100%;
+    background: #F5F7FE;
+    list-style: none;
+    margin-top: 5px;
+    height: 0px;
+    overflow-y: auto;
+    position: absolute;
+    transition: all 0.4s ease;
+    z-index: 30;
+}
+.sectionTwo .jobTitles.active{
+    height: 160px;
+}
+.sectionTwo .jobTitles::-webkit-scrollbar {
+    width: 7px;
+    background-color: #F5F7FE;
+    border-radius: 0 0.52vw 0.52vw 0;
+}
+.sectionTwo .jobTitles::-webkit-scrollbar-thumb {
+    background-color: #c3cae6;
+    border-radius: 0 0.52vw 0.52vw 0;
+}
+.sectionTwo .jobTitles li{
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 900;
+    display: block;
+}
+.sectionTwo .jobTitles li.active{
+    display: none;
+}
+.sectionTwo .jobTitles li:first-child{
+    border-radius: 0.52vw 0 0 0;
+    padding-top: 10px;
+}
+.sectionTwo .jobTitles li:last-child{
+    border-radius: 0 0 0 0.52vw;
+    padding-bottom: 10px;
+}   
+.sectionTwo .jobTitles li:hover{
+    background: #e5e7f0;
+}
+.sectionTwo .btnsWrapper{
+    max-width: 805px;
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    position: relative;
+    z-index: 9;
+}
+.sectionTwo .btnsWrapper button{
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Montserrat-Bold';
+    padding: 28.5px 0;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.sectionTwo .btnsWrapper button.previous{
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    color: #202226;
+}
+.sectionTwo .btnsWrapper button.signUp{
+    border: none;
+    color: white;
+    background: #202226;
+    box-shadow: 0px 8px 34px rgba(69, 86, 207, 0.5);
+    transition: all 0.3s ease;
+}
+.sectionTwo .btnsWrapper button.signUp:hover{
+    box-shadow: none; 
+}
+/* screen 3 */
+.sectionThree{
+    padding: 11.19vw 14.32vw 23vw;
+}
+.sectionThree p{
+    font-size: 14px;
+    color: #202226;
+    font-weight: 900;
+}
+/* ********* --- ********* */
